@@ -1,7 +1,71 @@
 <div class="container">
-	<div class="col-md-5 col-md-offset-3">
-		<h1 class="text-primary">Jijo Putho Kundul kundul kurian welcomes you cordially</h1>
-	</div>
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_2854.JPG", size: "460x345", alt: 'Fiesta Liquor Name Board', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Fiesta Liquor</h3>
+          <p>#1 place to get liquor in San Antonio</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_2855.JPG", size: "460x345", alt: 'Fiesta Liquor Parking Lot', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Large collection</h3>
+          <p>The largest collection of various imported liquor</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_2853.JPG", size: "460x345", alt: 'Inside the store1', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Subscribe</h3>
+          <p>Get subscribed to get promotions and special offers</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_2852.JPG", size: "460x345", alt: 'Inside the store2', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Chat</h3>
+          <p>Chat with the representative to get helped</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_2851.JPG", size: "460x345", alt: 'Inside the store3', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Price</h3>
+          <p>Get the quote of the liqour you want to buy</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <h1 class="text-center text-danger active">Welcome to FIESTA LIQUOR</h1>
 </div>
 
 <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=46029464"></script>
