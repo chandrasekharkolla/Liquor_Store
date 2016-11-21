@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+// $(".date-pick").datepicker('setDate', new Date());
+// document.getElementById("datepicker").innerHTML = Date();
