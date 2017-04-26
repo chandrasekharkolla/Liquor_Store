@@ -27,6 +27,11 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#myCarousel" data-slide-to="9"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -71,6 +76,46 @@
           <p>Get the quote of the liqour you want to buy</p>
         </div>
       </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_0185.JPG", size: "460x345", alt: 'Inside the store3', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Price</h3>
+          <p>Get the quote of the liqour you want to buy</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_0186.JPG", size: "460x345", alt: 'Inside the store3', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Price</h3>
+          <p>Get the quote of the liqour you want to buy</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_0187.JPG", size: "460x345", alt: 'Inside the store3', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Price</h3>
+          <p>Get the quote of the liqour you want to buy</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_0188.JPG", size: "460x345", alt: 'Inside the store3', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Price</h3>
+          <p>Get the quote of the liqour you want to buy</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "https://s3.amazonaws.com/fiestaliquors/IMG_0189.JPG", size: "460x345", alt: 'Inside the store3', class: 'img img-responsive img-rounded' %>
+        <div class="carousel-caption">
+          <h3>Price</h3>
+          <p>Get the quote of the liqour you want to buy</p>
+        </div>
+      </div>
   
     </div>
 
@@ -85,39 +130,81 @@
     </a>
   </div>
   <h1 class="text-center text-danger active">Welcome to FIESTA LIQUOR</h1>
+  <h2 class="text-center text-primary active">Locations</h2>
+  <br>
+
+  <div class="col-md-11 col-md-offset-1">
+    <div class="col-md-4">
+      <address>
+        <strong class="text-success text-active">Fiesta liquor</strong><br>
+        15503 Babcock road<br>
+        San Antonio, Texas 78255<br>
+        <abbr title="Phone">Store Phone:</abbr> (210) 541-0594<br>
+        <abbr title="Phone">Manager's Phone:</abbr> (210) 787-0267
+      </address>
+    </div>
+
+    <div class="col-md-4">
+      <address>
+        <strong class="text-success text-active">Fiesta liquor</strong><br>
+        14415 blanco road<br>
+        San Antonio, Texas 78216<br>
+        <abbr title="Phone">Store Phone:</abbr> (210) 408-2728<br>
+        <abbr title="Phone">Manager's Phone:</abbr> (210) 787-0267
+      </address>
+    </div>
+
+    <div class="col-md-4">
+      <address>
+        <strong class="text-success text-active">Discount liquor</strong><br>
+        6829 San Pedro<br>
+        San Antonio, Texas 78216<br>
+        <abbr title="Phone">Store Phone:</abbr> (210) 908-9502<br>
+        <abbr title="Phone">Manager's Phone:</abbr> (210) 787-0267
+      </address>
+    </div>
+
+    <address class="text-center">
+      <strong>Jijo Kurian</strong><br>
+      <a href="mailto:jijotkurian@me.com">jijotkurian@me.com</a>
+    </address>
+
+  </div>
+
 </div>
+
 
 <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=46029464"></script>
 </div>
 <script>
-$('#myModal').modal('show');
-document.getElementById('age').style.display = 'none';
-function myFunction() {
-    dateOfBirth = document.getElementById("myDate").value;
-    dateOfBirth = new Date(dateOfBirth);
-    birth_month = dateOfBirth.getMonth();
-    birth_day = dateOfBirth.getDate();
-    birth_year = dateOfBirth.getFullYear();
-    function calculate_age(birth_month,birth_day,birth_year) {
-      today_date = new Date();
-      today_year = today_date.getFullYear();
-      today_month = today_date.getMonth();
-      today_day = today_date.getDate();
-      age = today_year - birth_year;
-      if ( today_month < birth_month)
-      {
-          age--;
+  $('#myModal').modal('show');
+  document.getElementById('age').style.display = 'none';
+  function myFunction() {
+      dateOfBirth = document.getElementById("myDate").value;
+      dateOfBirth = new Date(dateOfBirth);
+      birth_month = dateOfBirth.getMonth();
+      birth_day = dateOfBirth.getDate();
+      birth_year = dateOfBirth.getFullYear();
+      function calculate_age(birth_month,birth_day,birth_year) {
+        today_date = new Date();
+        today_year = today_date.getFullYear();
+        today_month = today_date.getMonth();
+        today_day = today_date.getDate();
+        age = today_year - birth_year;
+        if ( today_month < birth_month)
+        {
+            age--;
+        }
+        if ((birth_month == today_month) && (today_day <= birth_day + 1))
+        {
+            age--;
+        }
+        return age;
+      };
+      var years = calculate_age(birth_month,birth_day,birth_year);
+      if (years >= 21) {
+        $('#myModal').modal('hide');
+        document.getElementById('age').style.display = 'block';
       }
-      if ((birth_month == today_month) && (today_day <= birth_day + 1))
-      {
-          age--;
-      }
-      return age;
-    };
-    var years = calculate_age(birth_month,birth_day,birth_year);
-    if (years >= 21) {
-      $('#myModal').modal('hide');
-      document.getElementById('age').style.display = 'block';
-    }
-};
+  };
 </script>
