@@ -9,7 +9,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
 
-  <body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <%= link_to "Fiesta Liquor", '#', id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home",   '#' %></li>
+          <li><%= link_to "Help",   '#' %></li>
+          <li><%= link_to "Log in", '#' %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container">
     <%= yield %>
-  </body>
+  </div>
+
+  <div id="footer">
+    <div class="">
+        <p>
+          <div class="col-md-11 col-md-offset-1">
+            <div class="col-md-4">
+              <address>
+                <strong class="text-primary text-active">Fiesta liquor</strong><br>
+                15503 Babcock road<br>
+                San Antonio, Texas 78255<br>
+                <abbr title="Phone">Store Phone:</abbr> (210) 541-0594<br>
+                <abbr title="Phone">Manager's Phone:</abbr> (954) 558-6952
+              </address>
+            </div>
+
+            <div class="col-md-4">
+              <address>
+                <strong class="text-primary text-active">Fiesta liquor</strong><br>
+                14415 blanco road<br>
+                San Antonio, Texas 78216<br>
+                <abbr title="Phone">Store Phone:</abbr> (210) 408-2728<br>
+                <abbr title="Phone">Manager's Phone:</abbr> (210) 787-0267
+              </address>
+            </div>
+
+            <div class="col-md-4">
+              <address>
+                <strong class="text-primary text-active">Discount liquor</strong><br>
+                6829 San Pedro<br>
+                San Antonio, Texas 78216<br>
+                <abbr title="Phone">Store Phone:</abbr> (210) 908-9502<br>
+                <abbr title="Phone">Manager's Phone:</abbr> (210) 787-0267
+              </address>
+            </div>
+          </div>
+        </p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <p>
+      Email us @ <a href="mailto:jijotkurian@me.com">jijotkurian@me.com</a>
+    </p>
+  </div>
 </html>
